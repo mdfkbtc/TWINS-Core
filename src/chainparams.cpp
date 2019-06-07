@@ -287,11 +287,11 @@ public:
         nRejectOldSporkKey = 1547510400; //!> Fully reject old spork key after (GMT): Tuesday, Janurary 15, 2019 00:00:00 AM GMT
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1537120187;
-        genesis.nNonce = 6023910;
+        genesis.nTime = 1559924843;
+        genesis.nNonce = 36377;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000005d3352428b306d20a8293b2c1573788ced20d0db839625969dbfbb41f8"));
+        assert(hashGenesisBlock == uint256("0x00000c538590ec8fc7c6725262788f25cb5cd4aa3120f1fcb4fe5f135f6a0eeb"));
         devAddress = "XiAHWrbngwovQPdtWzuehx4BL4dvCFKSW3";
         vFixedSeeds.clear();
         vSeeds.clear();
