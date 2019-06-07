@@ -138,7 +138,7 @@ public:
         nMaturity = 60;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 10000000000 * COIN;
-
+        nMasternodeCollateral = 1000000 * COIN;//collateral
         /** Height or Time Based Activations **/
         nLastPOWBlock = 400;
         nModifierUpdateBlock = 200;
