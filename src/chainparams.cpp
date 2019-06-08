@@ -197,9 +197,9 @@ public:
 
         devAddress = "WmXhHCV6PjXjxJdSXPeC8e4PrY8qTQMBFg";
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 76);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 137);
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 237);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 73);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 83);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 66);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
         // 	BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
@@ -217,8 +217,8 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04c9ac467e88caca60e5048efa9d254098422a877f1ffcbb506c4e2b3786b8ae16ae45b586e4106661e4f157da64eeb1486b19940a25511ebcbd07bc8c2f85fdca";
-        strSporkKeyOld = "04c9ac467e88caca60e5048efa9d254098422a877f1ffcbb506c4e2b3786b8ae16ae45b586e4106661e4f157da64eeb1486b19940a25511ebcbd07bc8c2f85fdca";
+        strSporkKey = "0496c1186ed9170fe353a6287c6f2b1ec768dcfc0fe71943067a0c21349dcf22af77a37f3202d540e85092ad4179f9b44806269450cd0982071ea7a9375ac7d949";
+        strSporkKeyOld = "04d8ef5cc6ef836335a868be72cf1fa97bb2628a36febc54c004809259b64f2cc8b0dacfd72ca69b3a692c719672ca4f2cbbd7cdd140ad3e1544479ea378a21cc2";
         strObfuscationPoolDummyAddress = "AMwZqSp6C5fWeXKf7ahGjo2WVers4nAUps";
         nStartMasternodePayments = 1537122249;
 
@@ -308,9 +308,9 @@ public:
         vSeeds.push_back(CDNSSeedData("46.19.213.68", "46.19.213.68"));     //Miami
         vSeeds.push_back(CDNSSeedData("46.19.209.68", "46.19.209.68"));     //New York
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet twins addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet twins script addresses start with '8' or '9'
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 76); // Testnet twins addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 137);  // Testnet twins script addresses start with '8' or '9'
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 237);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
         // Testnet twins BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
         // Testnet twins BIP32 prvkeys start with 'DRKP'
@@ -328,8 +328,8 @@ public:
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKey = "04dc3b42d79cdbd29a4694040a060ef5e5b2f50a8d52a28d133c506352e2bc43328ab94f4dc508c9c0a61bb381c98b6e0b7319bf87b4f76a52af55058ecaefe968";
-        strSporkKeyOld = "048c5897893ef51a021ef4aa4f095790942ec289d01da5c1f1488d0eccdb08762c3a815a91871526ed2861a1551881f7fc91d8ebc8d84f0f849689ca5211807852";
+        strSporkKey = "04c9ac467e88caca60e5048efa9d254098422a877f1ffcbb506c4e2b3786b8ae16ae45b586e4106661e4f157da64eeb1486b19940a25511ebcbd07bc8c2f85fdca";
+        strSporkKeyOld = "04c9ac467e88caca60e5048efa9d254098422a877f1ffcbb506c4e2b3786b8ae16ae45b586e4106661e4f157da64eeb1486b19940a25511ebcbd07bc8c2f85fdca";
         strObfuscationPoolDummyAddress = "xznpVZnXKi7XDgUd3NXdqVhUftyHKi1L1K";
         nStartMasternodePayments = 1420837558; //Fri, 09 Jan 2015 21:05:58 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
