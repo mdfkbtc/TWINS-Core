@@ -292,7 +292,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000c538590ec8fc7c6725262788f25cb5cd4aa3120f1fcb4fe5f135f6a0eeb"));
-        devAddress = "XiAHWrbngwovQPdtWzuehx4BL4dvCFKSW3";
+
         vFixedSeeds.clear();
         vSeeds.clear();
 
@@ -308,9 +308,11 @@ public:
         vSeeds.push_back(CDNSSeedData("46.19.213.68", "46.19.213.68"));     //Miami
         vSeeds.push_back(CDNSSeedData("46.19.209.68", "46.19.209.68"));     //New York
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 76); // Testnet twins addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 137);  // Testnet twins script addresses start with '8' or '9'
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 237);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
+        devAddress = "XiAHWrbngwovQPdtWzuehx4BL4dvCFKSW3";
+
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 76);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 137);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 237);
         // Testnet twins BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
         // Testnet twins BIP32 prvkeys start with 'DRKP'
